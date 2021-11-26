@@ -4,3 +4,5 @@
  #Menu Hamburguer como animação
  
  #Calculadora
+ 
+ #Cronometro
