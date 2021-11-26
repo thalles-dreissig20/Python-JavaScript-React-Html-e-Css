@@ -1,0 +1,107 @@
+*{
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    margin: auto;
+}
+body{
+    background-image: linear-gradient(90deg, rgb(44, 43, 43),rgb(58, 58, 58), rgb(22, 19, 19));
+}
+.sessao-projetos{
+    margin-top: 1rem;
+    margin-bottom: 80px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.sessao-projetos h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    position: relative;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    border-bottom: solid 3px #6a3093;
+    margin-bottom: 1.5rem;
+    z-index: 30;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.card{
+    width: 30rem;
+    height: 18rem;
+    position: relative;
+    margin-bottom: 90px;
+    box-shadow: 1 1 100px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 20px rgba(10, 10, 10, 0.6);
+}
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: .5rem;
+}
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 29rem;
+    height: 17rem;
+    border-radius: .5rem;
+    padding: 7px;
+    opacity: .8;
+    transition: opacity .3s;
+}
+.card:hover .card-img-wrapper img{
+    opacity: .2;
+}
+/* CARDS DA PAGINA DE PROJETOS*/
+.card-info{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.3 0.2rem 0.3rem rgb(0, 0, 0);
+    transition: all .3s;
+}
+.card-info h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+}
+.card-info h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgb(233, 114, 101);
+    margin-bottom: 1.5rem;
+}
+.card-info p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(172, 172, 172);
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: rgb(172, 172, 172);
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 .1rem .8rem rgb(0, 0, 0);
+}
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
