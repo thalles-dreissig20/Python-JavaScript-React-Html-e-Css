@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregar()">
+    <div id="img-area">
+        <img id="imagem" src="imagens/exemplo1.jpg" />
+    </div>
+
+    <div class="caixa"></div>
+    <div class="container">
+        <div class="ponto1"></div>
+        <div class="ponto2"></div>
+
+
+        <img class="imagem-log" src="imagens/login.png">
+        <div class="campo-email">
+            <img src="imagens/email.png">
+
+            <input class="email" type="email" placeholder="Email...">
+        </div>
+        <div class="campo-senha">
+            <img src="imagens/lock.png">
+            <input class="senha" type="password" placeholder="Senha...">
+        </div>
+
+        <div class="botao-cadastra">
+            <button onclick="cadastro()">Cadastrar</button>
+        </div>
+        <div class="botao-log">
+            <img class="img-log" src="imagens/enter.png">
+            <button onclick="entrar()" id="botao">Entrar</button>
+        </div>
+    </div>
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
