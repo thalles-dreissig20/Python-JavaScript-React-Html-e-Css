@@ -12,3 +12,6 @@
  #Página de apresentação
  
  #Aprendendo a manipular o display Grid
+ 
+ #Adicionei um "site" de loja para exemplificar a responsividade
+
