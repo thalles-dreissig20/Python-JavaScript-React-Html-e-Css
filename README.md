@@ -10,11 +10,15 @@ Calculadora basica desenvolvida por javascript.
 # Cronometro
 Cronometro basico desenvolvido por javascript.
  
- #Calculador de IMC
+# Calculador de IMC
+Calculador de IMC desenvolvido por javascript.
+
+# Página de apresentação
+Uma pagina web de apresentação pessoal desenvolvida com Html e CSS
  
- #Página de apresentação
+# Aprendendo a manipular o display Grid
+Uma pagina web de demonstração de manipulação de GRID layout desenvolvida com Html e CSS
  
- #Aprendendo a manipular o display Grid
- 
- #Adicionei um "site" de loja para exemplificar a responsividade
+# Adicionei um "site" de loja para exemplificar a responsividade
+Um site de loja para exemplificar a responsividade perfeita. (Ainda não acabado)
 
