@@ -10,5 +10,5 @@
 ## Calculador de IMC
  
 ## Página de apresentação
-
+<img width="470" src="src/assets/to_readme/ExemploPagina_Apresentacao.PNG">
 ## Aprendendo a manipular o display Grid
