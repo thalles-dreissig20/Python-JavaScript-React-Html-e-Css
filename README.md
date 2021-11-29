@@ -1,14 +1,14 @@
 # Quebra_cabeca
  Varias partes de sites: Javascript, Html e Css
  
- #Menu Hamburguer como animação
+## Menu Hamburguer como animação
  
- #Calculadora
+## Calculadora
  
- #Cronometro
+## Cronometro
  
- #Calculador de IMC
+## Calculador de IMC
  
- #Página de apresentação
+## Página de apresentação
 
- #Aprendendo a manipular o display Grid
+## Aprendendo a manipular o display Grid
