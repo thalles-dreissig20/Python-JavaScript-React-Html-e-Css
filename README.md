@@ -8,7 +8,9 @@
 ## Cronometro
  
 ## Calculador de IMC
+<br>
 <img width="470" src="src/assets/to_readme/IMC.PNG">
 ## Página de apresentação
+<br>
 <img width="470" src="src/assets/to_readme/ExemploPagina_Apresentacao.PNG">
 ## Aprendendo a manipular o display Grid
