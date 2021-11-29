@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+:root{
+    --corTexto: #423E40;
+    --cor1: #0B595C;
+    --cor2: #228B8F;
+    --cor3: #e1f8f8;
+    --cor4: #2CA6A1;
+    --cor5: #c3f7f7;
+}
+body{
+    background-color: var(--cor3);
+}
+
+header{
+    height: 140px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90fr 10fr;
+}
+*{
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+nav{
+    background-color: rgb(248, 240, 225);
+    height: 140px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 10fr ;
+    cursor: pointer;
+}
+
+
+
+/*MENU REFERENTE A SESSÃO MASCULINA*/
+.menuMasculino{
+    background-color: var(--cor3);
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 3 3 200px rgba(158, 137, 137, 0.3);
+    -webkit-box-shadow: 0 0 40px rgba(143, 119, 119, 0.3);
+    transition: 0.2s;
+}
+.menuMasculino:hover{
+    height: 110px;
+    background-color: var(--cor5);
+}
+.menuMasculino li a{
+    color: var(--corTexto);
+    font-family: Play;
+    text-align: center;
+}
+.menusM{
+    display: none;
+}
+.menusM li a{
+    color: var(--corTexto);   
+}
+
+
+
+/*MENU REFERENTE A SESSÃO FEMININA*/
+.menuFeminino{
+    background-color: var(--cor3);
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 3 3 200px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+.menuFeminino:hover{
+    height: 110px;
+    background-color: var(--cor5);
+}
+.menuFeminino li a{
+    color: var(--corTexto);
+    font-family: Play;
+}
+.menusF{
+    display: none;
+}
+.menusF li a{
+    color: var(--corTexto);
+}
+
+
+
+
+/*MENU REFERENTE A SESSÃO KIDS*/
+.menuKids{
+    background-color: var(--cor3);
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 3 3 200px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+.menuKids:hover{
+    height: 110px;
+    background-color: var(--cor5);
+}
+.menuKids li a{
+    color: var(--corTexto);
+    font-family: Play;
+}
+.menusK{
+    display: none;
+}
+.menusK li a{
+    color: var(--corTexto);
+}
+
+
+
+
+/*LOGO*/
+.logo{
+    float: right;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 176px;
+    width: 176px;
+    cursor: pointer;
+}
+
+
+/*MODELOS*/
+section{
+    margin-top: 1rem;
+    margin-bottom: 80px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.card{
+    width: 25rem;
+    height: 17rem;
+    position: relative;
+    left: 20px;
+    top: 10%;
+    margin-bottom: 90px;
+    box-shadow: 1 1 100px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 20px rgba(10, 10, 10, 0.6);
+}
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 24rem;
+    height: 16rem;
+    border-radius: .6rem;
+    padding: 7px;
+    opacity: .8;
+    transition: opacity .3s;
+}
+.card:hover .card-img-wrapper img{
+    opacity: .2;
+}
+/* CARDS DA PAGINA DE PROJETOS*/
+.card-info{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 0;
+    padding: .9rem;
+    text-shadow: 0.3 0.2rem 0.3rem rgb(0, 0, 0);
+    transition: all .3s;
+}
+.card-info h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(172, 172, 172);
+}
+.card-info h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgb(233, 114, 101);
+    margin-bottom: 1.5rem;
+}
+.card-info p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(172, 172, 172);
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: rgb(172, 172, 172);
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 .1rem .8rem rgb(0, 0, 0);
+}
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 1280px){
+    header{
+        height: 140px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70fr 30fr;
+    }
+    nav{
+        grid-template-columns: 20fr 20fr 20fr 40fr;
+    }
+    section{
+        justify-content: left;
+    }
+    .container{
+        width: 80%;
+        left: 2.5%;
+    }
+    .card{
+        width: 17rem;
+        height: 11rem;   
+    }
+    .card-img-wrapper img{
+        width: 16rem;
+        height: 10rem; 
+    }
+    .card-info p {
+        font-size: .5rem;
+        margin-bottom: .5rem;
+    }
+    .card-info button{
+        width: 5rem;
+        height: 1.5rem;
+        font-size: .5rem;
+    }
+    .card-info h3{
+        margin-bottom: 1rem;
+        font-size: .5rem;
+    }
+    .card-info h2{
+        font-size: 1rem;
+    }
+   
+}
+@media screen and (max-width: 1024px){
+    nav{
+        grid-template-columns: 25fr 25fr 25fr 25fr;
+        height: 140px;
+        width: 87%;
+        margin-left: 35px;
+    }
+    .card{
+        width: 15rem;
+        height: 10rem;   
+    }
+    .card-img-wrapper img{
+        width: 14rem;
+        height: 9rem; 
+    }
+    .card-info p {
+        font-size: .5rem;
+        margin-bottom: .5rem;
+    }
+    .card-info button{
+        width: 4rem;
+        height: 1rem;
+        font-size: .5rem;
+    }
+    .card-info h3{
+        margin-bottom: 1rem;
+        font-size: .5rem;
+    }
+    .card-info h2{
+        font-size: .7rem;
+    }
+    /*.container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+    }*/
+    
+}
+@media screen and (max-width: 990px){
+    nav{
+        grid-template-columns: 20fr 20fr 20fr 40fr;
+        height: 140px;
+        width: 87%;
+    }
+    .card{
+        width: 24rem;
+        height: 17rem;   
+    }
+    .card-img-wrapper img{
+        width: 23rem;
+        height: 16rem; 
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        left: 20px;
+    }
+    .card-info p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .card-info button{
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .card-info h3{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .card-info h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 823px){
+    nav{
+        grid-template-columns: 32fr 32fr 32fr 4fr;
+        height: 140px;
+        width: 87%;
+    }
+    .card{
+        width: 18rem;
+        height: 12rem;   
+    }
+    .card-img-wrapper img{
+        width: 17rem;
+        height: 11rem; 
+    }
+    .card-info p {
+        font-size: .7rem;
+        margin-bottom: .7rem;
+    }
+    .card-info button{
+        width: 6rem;
+        height: 2rem;
+        font-size: .7rem;
+    }
+    .card-info h3{
+        margin-bottom: 1rem;
+        font-size: .7rem;
+    }
+    .card-info h2{
+        font-size: 1rem;
+    }
+    /*.container{
+        grid-template-columns: 1fr ;
+        left: 20px;
+    }*/
+}
+@media screen and (max-width: 768px){
+    nav{
+        grid-template-columns: 32fr 32fr 32fr 4fr;
+        height: 140px;
+        width: 87%;
+    }
+    header{
+        height: 140px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70fr 30fr;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        left: 40px;
+    }
+    .card{
+        width: 18rem;
+        height: 11rem;   
+    }
+    .card-img-wrapper img{
+        width: 17rem;
+        height: 10rem; 
+    }
+    .card-info p {
+        font-size: .7rem;
+        margin-bottom: 1rem;
+    }
+    .card-info button{
+        width: 4rem;
+        height: 1.5rem;
+        font-size: .5rem;
+    }
+    .card-info h3{
+        margin-bottom: .4rem;
+        font-size: .5rem;
+    }
+    .card-info h2{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 655px){
+    nav{
+        grid-template-columns: 32fr 32fr 32fr 4fr;
+        height: 140px;
+        width: 87%;
+    }
+    .card{
+        width: 33rem;
+        height: 23rem;   
+    }
+    .card-img-wrapper img{
+        width: 32rem;
+        height: 22rem; 
+    }
+    .card-info p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .card-info button{
+        width: 7rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .card-info h3{
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    .card-info h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 540px){
+    section{
+        position: absolute;
+        right: 44.5%;
+        justify-content: left;
+    }
+    /*LOGO*/
+    .logo{
+        top: 0px;
+        right: 0px;
+        height: 130px;
+        width: 130px;
+        cursor: pointer;
+    }
+    .container{
+        grid-template-columns: 1fr; 
+    }
+    .card{
+        width: 28rem;
+        height: 21rem;   
+        left: 33%;
+    }
+    .card-img-wrapper img{
+        width: 27rem;
+        height: 20rem; 
+    }
+    .card-info p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card-info button{
+        width: 8rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .card-info h3{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .card-info h2{
+        font-size: 2rem;
+    }
+    .menu1{
+        /*background-color: red;*/
+        width: 2rem;
+        height: 2rem;
+        position: fixed;
+        z-index: 100;
+        right: 2rem;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    .show-menu .menu1{
+        right: 16rem;
+    }
+    .line{
+        width: 100%;
+        height: .1rem;
+        background-color: white;
+        box-shadow: 0.1rem 0.1rem 1px #000;
+        transition: transform 1s;
+    }
+    .show-menu #line1{
+        transform: rotate(50deg) translate(.3rem, .40rem);
+    }
+    .show-menu #line2{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .show-menu #line3{
+        transform: rotate(-50deg) translate(.3rem, -.60rem);
+    }
+    .sidebar{
+        width: 20rem;
+        height: 100vh;
+        background-color: rgb(248, 240, 225);
+        position: fixed;
+        top: 0;
+        right: -20rem;
+        transition: all 0.5s;
+        z-index: 7;
+    }
+    .show-menu .sidebar{
+        right: 0;
+    }
+    nav{
+        position: absolute;
+        top: 40%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: 10fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .menusM{
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    /*MENU REFERENTE A SESSÃO MASCULINA*/
+    .menuMasculino{
+        background-color: var(--cor3);
+        margin-top: 5%;
+        margin-left: 5%;
+        height: 20px;
+        padding: 7px;
+        border-radius: 5px;
+        box-shadow: 3 3 200px rgba(158, 137, 137, 0.3);
+        -webkit-box-shadow: 0 0 40px rgba(143, 119, 119, 0.3);
+        transition: 0.2s;
+        text-align: center;
+    }
+    .menuMasculino:hover{
+        height: 110px;
+        background-color: var(--cor5);
+    }
+    .menuMasculino li a{
+        color: var(--corTexto);
+        font-family: Play;
+    }
+    .menusM{
+        display: none;
+        text-align: center;
+    }
+    .menusM li a{
+        color: var(--corTexto);
+    }
+    
+    /*MENU REFERENTE A SESSÃO FEMININA*/
+    .menuFeminino{
+        background-color: var(--cor3);
+        margin-top: 5%;
+        margin-left: 5%;
+        height: 20px;
+        padding: 7px;
+        border-radius: 5px;
+        box-shadow: 3 3 200px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+        transition: 0.2s;
+        text-align: center;
+    }
+    .menuFeminino:hover{
+        height: 110px;
+        background-color: var(--cor5);
+    }
+    .menuFeminino li a{
+        color: var(--corTexto);
+        font-family: Play;
+    }
+    .menusF{
+        display: none;
+        text-align: center;
+    }
+    .menusF li a{
+        color: var(--corTexto);
+    }
+    /*MENU REFERENTE A SESSÃO KIDS*/
+    .menuKids{
+        background-color: var(--cor3);
+        margin-top: 5%;
+        margin-left: 5%;
+        height: 20px;
+        padding: 7px;
+        border-radius: 5px;
+        box-shadow: 3 3 200px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+        transition: 0.2s;
+        text-align: center;
+    }
+    .menuKids:hover{
+        height: 110px;
+        background-color: var(--cor5);
+    }
+    .menuKids li a{
+        color: var(--corTexto);
+        font-family: Play;
+    }
+    .menusK{
+        display: none;
+        text-align: center;
+    }
+    .menusK li a{
+        color: var(--corTexto);
+    }
+
+    
+}
+/*SURFACE DUO*/
+@media screen and (max-width: 540px){
+
+}
+/*IPHONE 6/7/8 PLUS*/
+@media screen and (max-width: 414px){
+
+}
+/*PIXEL 2 XL*/
+@media screen and (max-width: 411px){
+
+}
+/*PIXEL 2*/
+@media screen and (max-width: 411px){
+
+}
+/*IPHONE X*/
+@media screen and (max-width: 375px){
+
+}
+/*IPHONE 6/7/8*/
+@media screen and (max-width: 375px){
+
+}
+/*MOTO G4*/
+@media screen and (max-width: 360px){
+
+}
+/*GALAXY S5*/
+@media screen and (max-width: 360px){
+
+}
+/*IPHONE 5*/
+@media screen and (max-width: 320px){
+
+}
+/*GALAXY FOLD*/
+@media screen and (max-width: 280px){
+
+}
