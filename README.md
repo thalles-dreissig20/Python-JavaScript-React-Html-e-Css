@@ -24,6 +24,7 @@ Cronometro feito em Javascript
 ## Data e Hora
 Programa mostra o horario atual mostrando imagens diferentes feito em Javascript
 ## Loja virtual
+Fiz uma "Loja" em html css e javascript para demonstrar os resultado com responsividade.
 
 ## Aprendendo a manipular o display Grid
 <br>
