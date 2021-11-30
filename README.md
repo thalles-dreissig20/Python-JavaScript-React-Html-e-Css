@@ -1,6 +1,9 @@
 # Quebra_cabeca
  Varias partes de sites: Javascript, Html e Css
 ## Banners Animados
+<br>
+<img width="470" src="src/assets/to_readme/Gif_Banners.gif">
+<br>
 
 ## Calculador de IMC
 <br>
