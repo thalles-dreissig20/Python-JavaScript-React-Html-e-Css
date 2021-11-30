@@ -14,9 +14,9 @@
 
 ## Cronometro
 
-##Data e Hora
+## Data e Hora
 
-##Loja virtual
+## Loja virtual
 
 ## Aprendendo a manipular o display Grid
 
@@ -27,9 +27,9 @@
 <img width="470" src="src/assets/to_readme/ExemploPagina_Apresentacao.PNG">
 <br>
 
-##Pagina de login
+## Pagina de login
 
-##Pagina sobre
+## Pagina sobre
 
 
  
