@@ -4,8 +4,7 @@
 ## Menu Hamburguer como animação
  
 ## Calculadora
-<img width="470" src="src/assets/to_readme/imagem_calculadora.PNG">
-<br>
+
 
 ## Cronometro
  
