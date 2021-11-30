@@ -23,7 +23,7 @@
 
 ## Aprendendo a manipular o display Grid
 <br>
-<img width="470" src="src/assets/to_readme/ExemploPagina_ManipulandoGrid.PNG">
+<img width="470" src="src/assets/to_readme/ExemploPagina_ManipulacaoGrid.PNG">
 <br>
 
 ## Menu Hamburguer como animação
