@@ -12,7 +12,7 @@
 
 ## Calculadora
 <br>
-<img width="470" src="src/assets/to_readme/imagem_calculadora.PNG">
+<img src="src/assets/to_readme/imagem_calculadora.PNG">
 <br>
 
 ## Cronometro
