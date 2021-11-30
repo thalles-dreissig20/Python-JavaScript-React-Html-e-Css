@@ -22,7 +22,9 @@
 ## Loja virtual
 
 ## Aprendendo a manipular o display Grid
-
+<br>
+<img width="470" src="src/assets/to_readme/ExemploPagina_ManipulandoGrid.PNG">
+<br>
 ## Menu Hamburguer como animação
  
 ## Página de apresentação
