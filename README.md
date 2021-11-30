@@ -27,7 +27,10 @@
 <br>
 
 ## Menu Hamburguer como animação
- 
+<br>
+<img width="470" src="src/assets/to_readme/gif_menuLateral.gif">
+<br>
+
 ## Página de apresentação
 <br>
 <img width="470" src="src/assets/to_readme/ExemploPagina_Apresentacao.PNG">
