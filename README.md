@@ -46,6 +46,8 @@ Fiz uma "Loja" em html css e javascript para demonstrar os resultado com respons
 <img width="470" src="src/assets/to_readme/paginalogin.PNG">
 <br>
 
+## "loja virtual"
+fiz um pagina para demonstrar a responsividade perfeita
 ## Pagina sobre
 
 
