@@ -25,6 +25,7 @@ Cronometro feito em Javascript
 Programa mostra o horario atual mostrando imagens diferentes feito em Javascript
 ## Loja virtual
 Fiz uma "Loja" em html css e javascript para demonstrar os resultado com responsividade.
+<br>Fiz algumas alterações de responsividade em resoluções mais baixas.
 
 ## Aprendendo a manipular o display Grid
 <br>
@@ -46,8 +47,6 @@ Fiz uma "Loja" em html css e javascript para demonstrar os resultado com respons
 <img width="470" src="src/assets/to_readme/paginalogin.PNG">
 <br>
 
-## "loja virtual"
-fiz um pagina para demonstrar a responsividade perfeita
 ## Pagina sobre
 
 
