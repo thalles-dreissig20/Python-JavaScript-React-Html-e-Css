@@ -15,7 +15,7 @@ calculador de IMC com javascript
 ## Calculadora
 Calculadora feita em Javascript
 <br>
-<img src="src/assets/to_readme/imagem_calculadora.png">
+<img width="370" src="src/assets/to_readme/imagem_calculadora.png">
 <br>
 
 ## Cronometro
