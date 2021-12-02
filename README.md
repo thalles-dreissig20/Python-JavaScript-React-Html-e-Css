@@ -9,7 +9,7 @@ Banners animados com css e html
 ## Calculador de IMC
 calculador de IMC com javascript
 <br>
-<img width="470" src="src/assets/to_readme/IMC.PNG">
+<img width="370" src="src/assets/to_readme/IMC.PNG">
 <br>
 
 ## Calculadora
