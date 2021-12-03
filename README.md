@@ -19,7 +19,7 @@ Calculadora feita em Javascript
 <br>
 
 ## Cronometro
-Cronometro feito em Javascript
+Cronometro simples com pausa e recomeçar feito em Javascript
 
 ## Data e Hora
 Programa mostra o horario atual mostrando imagens diferentes feito em Javascript
