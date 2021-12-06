@@ -51,7 +51,7 @@ Fiz uma "Loja" em html css e javascript para demonstrar os resultado com respons
 ## Pagina sobre
 
 ## WhatsApp bot
-<br>Programa feito em python para mandar mensagens automaticas.
+<br>Programa feito em python para mandar mensagens automaticas.(ainda não acabado)
 
 
  
