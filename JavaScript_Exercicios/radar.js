@@ -1,4 +1,4 @@
-verificarVelocidade(50);
+verificarVelocidade(100);
 
 function verificarVelocidade(velocidade){
     const velocidadeMaxima = 70;

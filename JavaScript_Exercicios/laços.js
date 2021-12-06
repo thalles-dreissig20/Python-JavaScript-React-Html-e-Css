@@ -23,11 +23,11 @@ while (i >= 5) {
 
 
 //DO..WHILE
-let i = 0;
-do {
+let a = 0;
+do{
     console.log("Digitanto...")
-    i++;
-}while(i < 10);
+    a++;
+}while(a < 10);
 
 
 //FOR..IN
