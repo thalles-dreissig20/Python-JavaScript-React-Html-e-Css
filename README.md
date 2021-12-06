@@ -9,20 +9,21 @@ Banners animados com css e html
 ## Calculador de IMC
 calculador de IMC com javascript
 <br>
-<img width="470" src="src/assets/to_readme/IMC.PNG">
+<img width="370" src="src/assets/to_readme/IMC.PNG">
 <br>
 
 ## Calculadora
 Calculadora feita em Javascript
 <br>
-<img src="src/assets/to_readme/imagem_calculadora.png">
+<img width="370" src="src/assets/to_readme/imagem_calculadora.png">
 <br>
 
 ## Cronometro
-Cronometro feito em Javascript
+Cronometro simples com pausa e recomeçar feito em Javascript
 
 ## Data e Hora
 Programa mostra o horario atual mostrando imagens diferentes feito em Javascript
+
 ## Loja virtual
 Fiz uma "Loja" em html css e javascript para demonstrar os resultado com responsividade.
 <br>Fiz algumas alterações de responsividade em resoluções mais baixas.
