@@ -1,4 +1,4 @@
-# Quebra_cabeca
+# Python, JavaScript, Html e Css
 ### Varias partes de sites: Javascript, Html e Css
 ## Banners Animados
 Banners animados com css e html
