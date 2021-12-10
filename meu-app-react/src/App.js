@@ -1,42 +1,44 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 import Tasks from "./componentes/Tasks.js";
+import "./componentes/addTask.js";
+import "./componentes/addButton.js";
 import "./App.css";
 
-const App = () => {
 
- // let mensagem = "Hello World!";
+function App() {
   const [tasks, setTasks] = useState([
     {
       id: "1",
       title: "programação",
-      componet: true,
+      completed: true,
     },
     {
       id: "2",
       title: "Televisão",
-      componet: false,
+      completed: false,
     },
     {
       id: "2",
-      title: "Televisão",
-      componet: false,
+      title: "Computador",
+      completed: false,
     },
     {
       id: "2",
-      title: "Televisão",
-      componet: false,
+      title: "Design",
+      completed: false,
     },
   ]);
 
-  return(
+  return (
     <>
-        <div className="container">
-          <Tasks tasks={tasks} />
-        </div>
+      <div className="container">
+        <addTask />
+        <Tasks tasks={tasks} />
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default App;
