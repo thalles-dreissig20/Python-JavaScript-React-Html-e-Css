@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 
 import Tasks from "./componentes/Tasks.js";
-import "./componentes/addTask.js";
-import "./componentes/addButton.js";
+import AddTask from "./componentes/addTask.js";
 import "./App.css";
 
 
@@ -20,21 +19,32 @@ function App() {
       completed: false,
     },
     {
-      id: "2",
+      id: "3",
       title: "Computador",
       completed: false,
     },
     {
-      id: "2",
+      id: "4",
       title: "Design",
       completed: false,
     },
   ]);
 
+  const HandleTaskAddition = (taskTitle) => {
+    const newTask = [
+      ...tasks,{
+        title: taskTitle,
+        id: "5",
+        completed: false,
+      },
+    ];
+    setTasks(newTask);
+  };
+
   return (
     <>
       <div className="container">
-        <addTask />
+        <AddTask HandleTaskAddition={HandleTaskAddition} />
         <Tasks tasks={tasks} />
       </div>
     </>

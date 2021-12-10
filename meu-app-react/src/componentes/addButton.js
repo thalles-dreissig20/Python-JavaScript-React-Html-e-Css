@@ -2,7 +2,7 @@ import React from "react";
 
 import "./addButton.css";
 
-const buttonEnviar = ({ children, onClick }) => {
+const Button = ({ children, onClick }) => {
     return (
         <button onClick={onClick} className="button">
         {children}</button>
@@ -10,4 +10,4 @@ const buttonEnviar = ({ children, onClick }) => {
 };
 
  
-export default buttonEnviar;
+export default Button;
