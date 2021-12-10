@@ -44,9 +44,6 @@ Fiz uma "Loja" em html css e javascript para demonstrar os resultado com respons
 <br>
 
 ## Pagina de login
-<br>
-<img width="470" src="src/assets/to_readme/paginalogin.PNG">
-<br>
 
 ## Pagina sobre
 
