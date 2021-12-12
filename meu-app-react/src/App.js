@@ -1,54 +1,81 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import Header from "./componentes/header";
+import Tasks from "./componentes/Tasks";
+import AddTask from "./componentes/addTask";
+import TaskDetails from "./componentes/taskDetails";
 
-import Tasks from "./componentes/Tasks.js";
-import AddTask from "./componentes/addTask.js";
 import "./App.css";
 
+const App = () => {
+	const [tasks, setTasks] = useState([]);
 
-function App() {
-  const [tasks, setTasks] = useState([
-    {
-      id: "1",
-      title: "programação",
-      completed: true,
-    },
-    {
-      id: "2",
-      title: "Televisão",
-      completed: false,
-    },
-    {
-      id: "3",
-      title: "Computador",
-      completed: false,
-    },
-    {
-      id: "4",
-      title: "Design",
-      completed: false,
-    },
-  ]);
+	useEffect(() => {
+		const fetchTasks = async () => {
+			const { data } = await axios.get(
+				"https://jsonplaceholder.cypress.io/todos?_limit=10"
+			);
 
-  const HandleTaskAddition = (taskTitle) => {
-    const newTask = [
-      ...tasks,{
-        title: taskTitle,
-        id: "5",
-        completed: false,
-      },
-    ];
-    setTasks(newTask);
-  };
+			setTasks(data);
+		};
 
-  return (
-    <>
-      <div className="container">
-        <AddTask HandleTaskAddition={HandleTaskAddition} />
-        <Tasks tasks={tasks} />
-      </div>
-    </>
-  );
+		fetchTasks();
+	}, []);
+
+	const handleTaskClick = (taskId) => {
+		const newTasks = tasks.map((task) => {
+			if (task.id === taskId) return { ...task, completed: !task.completed };
+
+			return task;
+		});
+
+		setTasks(newTasks);
+	};
+
+	const handleTaskAddition = (taskTitle) => {
+		const newTasks = [
+			...tasks,
+			{
+				title: taskTitle,
+				id: uuidv4(),
+				completed: false,
+			},
+		];
+
+		setTasks(newTasks);
+	};
+
+	const handleTaskDeletion = (taskId) => {
+		const newTasks = tasks.filter((task) => task.id !== taskId);
+
+		setTasks(newTasks);
+	};
+
+	return (
+		<Router>
+			<div className="container">
+				<Header />
+				<Route
+					path="/"
+					exact
+					render={() => (
+						<>
+							<AddTask handleTaskAddition={handleTaskAddition} />
+							<Tasks
+								tasks={tasks}
+								handleTaskClick={handleTaskClick}
+								handleTaskDeletion={handleTaskDeletion}
+							/>
+						</>
+					)}
+				/>
+				<Route path="/:taskTitle" exact component={TaskDetails} />
+			</div>
+		</Router>
+	);
 };
 
 export default App;
