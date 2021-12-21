@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
+import fundo from './imagens/fundo.jpg';
 
 const Baner = styled.div`
     position: absolute;
@@ -59,18 +61,28 @@ const Button = styled.div`
 `;
 
 const Fundo = styled.div`
-    
+    height: 60vh;
+    width: 100%;
+`;
+const Img = styled.img`
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
 `;
 const BanerPrincipal = () => {
+    
     return ( 
         <>
             <Fundo>
-                <Baner>
-                    <Titulo>Web Developer & Front End Designer</Titulo>
-                    <Nome>Thalles R. Dreissig</Nome>
-                    <Button to="#">Saiba mais</Button>
-                </Baner>
+                <Img src={ fundo }/>
             </Fundo>
+            <Baner>
+                <Titulo>Web Developer & Front End Designer</Titulo>
+                <Nome>Thalles R. Dreissig</Nome>
+                <Button to="#">Saiba mais</Button>
+            </Baner>
+            
         </>
     );
 }
