@@ -8,7 +8,7 @@
     "devStart": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Thalles Dreissig",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

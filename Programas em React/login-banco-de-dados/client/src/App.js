@@ -1,11 +1,18 @@
 import './App.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
-
+import Axios from 'axios';
 
 function App() {
   const handleClickLogin = (values) => console.log(values);
-  const handleClickRegister = (values) => console.log(values);
+  const handleClickRegister = (values) => {
+    Axios.post("https://localhost:3001/register", {
+      email: values.email,
+      password: values.password,
+    }).then((response) => {
+        console.log(response);
+    });
+  };
   
   const validationLogin = yup.object().shape({
     email: yup.string().email("Não é um email valido!").required("Este campo é obrigatorio!"),
