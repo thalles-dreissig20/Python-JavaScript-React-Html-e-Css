@@ -1,4 +1,6 @@
-# Python, JavaScript, React Html e Css
+# Python, JavaScript, React, Html e Css
+Repositório para guardar programas ou parte deles em javascript react e python
+<br>
 ### Varias partes de sites: Javascript, Html e Css
 ## Banners Animados
 Banners animados com css e html
