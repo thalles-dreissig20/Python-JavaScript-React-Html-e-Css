@@ -20,7 +20,7 @@ function App() {
     }).then((response) => {
         console.log(response);
     });
-  } 
+  };
   
   const validationLogin = yup.object().shape({
     email: yup.string().email("Não é um email valido!").required("Este campo é obrigatorio!"),
