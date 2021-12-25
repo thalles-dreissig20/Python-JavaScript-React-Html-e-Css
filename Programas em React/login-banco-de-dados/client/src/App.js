@@ -1,97 +1,16 @@
 import "./App.css";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as yup from "yup";
-import Axios from "axios";
+import { BrowserRouter } from 'react-router-dom';
+
+import Cadastro from "./pages/cadastro";
+import Login from "./pages/login";
+import Routes from "./routes";
 
 function App() {
-  
-  const handleClickRegister = (values) => {
-    Axios.post("http://localhost:3001/Register", {
-      email: values.email,
-      password: values.password,
-    }).then((response) => {
-        console.log(response);
-    });
-  };
-  const handleClickLogin = (values) => {
-      Axios.post("http://localhost:3001/Login", {
-      email: values.email,
-      password: values.password,
-    }).then((response) => {
-        console.log(response);
-    });
-  };
-  
-  const validationLogin = yup.object().shape({
-    email: yup.string().email("Não é um email valido!").required("Este campo é obrigatorio!"),
-    password: yup.string().min(8, "A senha deve conter 8 caracteres!").required("Esse campo é obrigatorio!"),
-  });
-  
-  const validationRegister = yup.object().shape({
-    email: yup.string().email("Não é um email valido!").required("Este campo é obrigatorio!"),
-    password: yup.string().min(8, "A senha deve conter 8 caracteres!").required("Esse campo é obrigatorio!"),
-    confirmPassword: yup.string().required("Esse campo é obrigatorio!").oneOf([yup.ref("password"), null], "As senhas não são iguais!"),
-  });
-  
-  return (
-    <div className="Container">
-        
-        <h1>Login</h1>
-      <Formik initialValues={ {} } onSubmit={handleClickLogin} validationSchema={validationLogin}>
-          <Form className="Form">
-
-            <div className="form-login-group">  
-              <Field name="email" className="form-field" placeholder="Email" />
-              <ErrorMessage
-              component="span"
-              name="email"
-              className="Form-error"/>
-            </div>
-
-            <div className="form-login-group">
-                <Field name="password" className="form-field" placeholder="Senha" />
-                <ErrorMessage 
-                component="span"
-                name="password"
-                className="Form-error"/>
-            </div>
-
-            <button className="button" type="submit">Login</button>
-          </Form>
-      </Formik>
-
-      <h1>Cadastro</h1>
-      <Formik initialValues={ {} } onSubmit={handleClickRegister} validationSchema={validationRegister}>
-        <Form className="Form">
-            
-            <div className="form-login-group">
-              <Field name="email" className="form-field" placeholder="Email" />
-              <ErrorMessage 
-                component="span"
-                name="email"
-                className="Form-error"/>
-            </div>
-
-            <div className="form-login-group">
-              <Field name="password" className="form-field" placeholder="Senha" />
-              <ErrorMessage 
-                component="span"
-                name="password"
-                className="Form-error"/>
-            </div>
-
-            <div className="form-login-group">
-              <Field name="confirmPassword" className="form-field" placeholder="Confirme sua senha" />
-              <ErrorMessage 
-                component="span"
-                name="confirmPassword"
-                className="Form-error"/>
-            </div>
-
-            <button className="button" type="submit">Cadastrar</button>
-        </Form>
-      </Formik>
-    </div>
+  return(
+    <BrowserRouter>
+      <Login />
+      <Routes />
+    </BrowserRouter>
   );
 };
 export default App;
