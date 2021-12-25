@@ -13,7 +13,7 @@ const db = mysql.createPool({
 app.use(express.json());
 app.use(cors());
 
-app.post("/register", (req, res) => {
+app.post("/Register", (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
 
@@ -23,7 +23,7 @@ app.post("/register", (req, res) => {
             res.send(err);
         }
         if(result.length == 0) {
-            db.query("INSERT INTO usuarios (email, senha) VALUES (?, ?)",
+            db.query("INSERT INTO usuarios (email, password) VALUES (?, ?)",
             [email, password], 
             (err, result) => {
                 if(err){
