@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const mysql = require("mysql");
 const cors = require("cors");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 const db = mysql.createPool({
     host: "localhost",
@@ -23,16 +25,18 @@ app.post("/Register", (req, res) => {
             res.send(err);
         }
         if(result.length == 0) {
-            db.query("INSERT INTO usuarios (email, password) VALUES (?, ?)",
-            [email, password], 
-            (err, response) => {
-                if(err){
-                    res.send(err);
-                }
-                res.send({ msg: "cadastrado com sucesso!" });
-            }
+            bcrypt.hash(password, saltRounds, (erro, hash) =>{
 
-            );
+                db.query("INSERT INTO usuarios (email, password) VALUES (?, ?)",
+                    [email, hash], 
+                    (err, response) => {
+                        if(err){
+                            res.send(err);
+                        }
+                        res.send({ msg: "cadastrado com sucesso!" });
+                    }
+                );
+            })
         } else {
             res.send({ msg: "Usuario já cadastrado!" });
         }
@@ -49,7 +53,13 @@ app.post("/Login", (req, res) => {
                 res.send(err);
             }
             if(result.length > 0){
-                res.send({msg: "login efetuado!"})
+                bcrypt.campare(password, result[0].password, (erro, result) => {
+                    if(result) {
+                        res.send("Usúario logado com sucesso!");
+                    }else{
+                        res.send("Senha incorreta!");
+                    }
+                });
             }
             else{
                 res.send({msg: "Usuario não encontrado"})
