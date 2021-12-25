@@ -47,13 +47,13 @@ app.post("/Login", (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
 
-    db.query("SELECT * FROM usuarios WHERE email = ? AND password = ?",
-        [email, password], (err, result) => {
+    db.query("SELECT * FROM usuarios WHERE email = ?",
+        [email], (err, result) => {
             if(err){
                 res.send(err);
             }
             if(result.length > 0){
-                bcrypt.campare(password, result[0].password, (erro, result) => {
+                bcrypt.compare(password, result[0].password, (erro, result) => {
                     if(result) {
                         res.send("Usúario logado com sucesso!");
                     }else{
