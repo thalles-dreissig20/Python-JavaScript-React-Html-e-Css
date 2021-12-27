@@ -1,6 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Link } from 'react-router-dom';
 import * as yup from "yup";
 import Axios from "axios";
+import './login.css';
 
 function Login() {
   
@@ -44,7 +46,11 @@ function Login() {
 
             <button className="button" type="submit">Login</button>
 
-            <button to="/Register">Cadastrar</button>
+            <ul>
+              <li>
+                <Link to="/Register">Cadastrar</Link>
+              </li>
+            </ul>
           </Form>
       </Formik>
     </div>
