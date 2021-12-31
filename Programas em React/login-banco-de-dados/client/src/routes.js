@@ -8,9 +8,8 @@ export default () => {
     return(
         <Switch>
             <Route exact path="/" element={<Login />}>
-                <Login />
             </Route>
-            <Route path="/Register" element={<Cadastro />}>
+            <Route path="/Register">
                 <Cadastro />
             </Route>
         </Switch>
