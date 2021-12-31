@@ -1,4 +1,5 @@
 import React from 'react';
+import './cadastro.css';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import Axios from "axios";
@@ -21,7 +22,7 @@ const Cadastro = () => {
     });
 
     return ( 
-        <>
+        <div className='Container'>
             <h1>Cadastro</h1>
             <Formik initialValues={ {} } onSubmit={handleClickRegister} validationSchema={validationRegister}>
                 <Form className="Form">
@@ -52,7 +53,7 @@ const Cadastro = () => {
                 <button className="button" type="submit">Cadastrar</button>
                 </Form>
             </Formik>
-        </>
+        </div>
     );
 };
 export default Cadastro;

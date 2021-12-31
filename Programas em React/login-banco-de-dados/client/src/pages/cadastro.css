@@ -1,0 +1,35 @@
+.Container{
+    background-color: #3a3a55;
+    height: 550px;
+    width: 515px;
+    position: relative;
+    margin: auto;
+    top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+button{
+  background-color: #5656a5;
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 515px;
+  height: 40px;
+}
+input{
+  font-size: 20px;
+}
+.Form{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.form-field{
+  width: 500px;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 20px;
+}

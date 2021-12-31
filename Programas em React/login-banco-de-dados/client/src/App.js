@@ -6,7 +6,6 @@ import Routes from "./routes";
 function App() {
   return(
     <BrowserRouter>
-      <Login />
       <Routes />
     </BrowserRouter>
   );

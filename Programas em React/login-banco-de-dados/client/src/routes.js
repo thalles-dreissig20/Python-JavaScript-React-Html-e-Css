@@ -7,7 +7,11 @@ import Login from "./pages/login";
 export default () => {
     return(
         <Switch>
-            <Route exact path="/" element={<Login />}>
+            <Route exact path="/">
+                <Login />
+            </Route>
+            <Route exact path="/Login">
+                <Login />
             </Route>
             <Route path="/Register">
                 <Cadastro />
