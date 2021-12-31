@@ -48,7 +48,7 @@ function Login() {
 
             <ul>
               <li>
-                <Link to="/Register">Cadastrar</Link>
+                <Link className="Link" to="/Register">Cadastrar</Link>
               </li>
             </ul>
           </Form>

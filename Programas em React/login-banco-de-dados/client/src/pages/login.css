@@ -1,3 +1,8 @@
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
 .Container{
     background-color: #3a3a55;
     height: 550px;
@@ -19,6 +24,17 @@ button{
   font-size: 20px;
   width: 515px;
   height: 40px;
+}
+ul li {
+  background-color: #5656a5;
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+}
+.Link{
+  padding: 10px;
+  font-size: 20px;
+  color: white;
 }
 input{
   font-size: 20px;
