@@ -1,5 +1,6 @@
 import React from 'react';
 import './cadastro.css';
+import { Link } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import Axios from "axios";
@@ -51,6 +52,11 @@ const Cadastro = () => {
                     className="Form-error"/>
                 </div>
                 <button className="button" type="submit">Cadastrar</button>
+                
+                
+                <button>
+                     <Link className="Link" to="/Login">Voltar</Link>
+                </button>
                 </Form>
             </Formik>
         </div>

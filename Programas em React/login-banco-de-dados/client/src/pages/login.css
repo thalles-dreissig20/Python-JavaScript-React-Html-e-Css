@@ -23,6 +23,7 @@ button{
   font-size: 20px;
   width: 515px;
   height: 40px;
+  cursor: pointer;
 }
 ul li {
   background-color: #5656a5;
