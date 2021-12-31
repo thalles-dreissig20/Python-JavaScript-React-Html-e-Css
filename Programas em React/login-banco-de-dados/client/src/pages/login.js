@@ -23,7 +23,6 @@ function Login() {
 
   return (
     <div className="Container">
-        
         <h1>Login</h1>
       <Formik initialValues={ {} } onSubmit={handleClickLogin} validationSchema={validationLogin}>
           <Form className="Form">
@@ -46,11 +45,10 @@ function Login() {
 
             <button className="button" type="submit">Login</button>
 
-            <ul>
-              <li>
-                <Link className="Link" to="/Register">Cadastrar</Link>
-              </li>
-            </ul>
+            
+            <button>
+               <Link className="Link" to="/Register">Cadastrar</Link>
+            </button>
           </Form>
       </Formik>
     </div>
