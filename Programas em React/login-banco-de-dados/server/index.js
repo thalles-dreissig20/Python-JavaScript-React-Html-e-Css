@@ -18,6 +18,7 @@ app.use(cors());
 app.post("/Register", (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
+    const name = req.body.name;
 
     db.query("SELECT * FROM usuarios WHERE email = ?", [email],
     (err, result) =>{
@@ -27,8 +28,8 @@ app.post("/Register", (req, res) => {
         if(result.length == 0) {
             bcrypt.hash(password, saltRounds, (erro, hash) =>{
 
-                db.query("INSERT INTO usuarios (email, password) VALUES (?, ?)",
-                    [email, hash], 
+                db.query("INSERT INTO usuarios (name, email, password) VALUES (?, ?, ?)",
+                    [name, email, hash], 
                     (err, response) => {
                         if(err){
                             res.send(err);
@@ -67,7 +68,6 @@ app.post("/Login", (req, res) => {
         }
     );
 });
-
 
 app.listen(3001, () => {
     console.log("rodando na porta 3001");

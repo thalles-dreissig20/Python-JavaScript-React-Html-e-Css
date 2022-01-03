@@ -10,6 +10,7 @@ const Cadastro = () => {
     const handleClickRegister = (values) => {
         Axios.post("http://localhost:3001/Register", {
           email: values.email,
+          name: values.name,
           password: values.password,
         }).then((response) => {
             console.log(response);
@@ -23,17 +24,25 @@ const Cadastro = () => {
     });
 
     return ( 
-        <div className='Container'>
+        <div className="Container">
             <h1>Cadastro</h1>
             <Formik initialValues={ {} } onSubmit={handleClickRegister} validationSchema={validationRegister}>
                 <Form className="Form">
+
+                <div className="form-login-group">
+                <Field name="name" className="form-field" placeholder="Nome Completo" />
+                <ErrorMessage
+                    component="span"
+                    name="nome"
+                    classname="Form-error" />
+                </div>
                     
                 <div className="form-login-group">
                 <Field name="email" className="form-field" placeholder="Email" />
                 <ErrorMessage 
                     component="span"
                     name="email"
-                    className="Form-error"/>
+                    className="Form-error" />
                 </div>
 
                 <div className="form-login-group">
