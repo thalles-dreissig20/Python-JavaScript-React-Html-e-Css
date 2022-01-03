@@ -23,7 +23,7 @@ function Login() {
 
   return (
     <div className="Container">
-        <h1>Login</h1>
+      <h1 className="login">Login</h1>
       <Formik initialValues={ {} } onSubmit={handleClickLogin} validationSchema={validationLogin}>
           <Form className="Form">
 

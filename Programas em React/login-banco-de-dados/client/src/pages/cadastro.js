@@ -28,7 +28,7 @@ const Cadastro = () => {
     return ( 
         <div className="Container">
             <VscAccount className='icon-login' />
-            <h1>Cadastro</h1>
+            <h1 className='cadastro'>Cadastro</h1>
             <Formik initialValues={ {} } onSubmit={handleClickRegister} validationSchema={validationRegister}>
                 <Form className="Form">
 
