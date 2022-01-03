@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import Axios from "axios";
+import { VscAccount } from "react-icons/vsc";
 
 const Cadastro = () => {
 
@@ -26,6 +27,7 @@ const Cadastro = () => {
 
     return ( 
         <div className="Container">
+            <VscAccount className='icon-login' />
             <h1>Cadastro</h1>
             <Formik initialValues={ {} } onSubmit={handleClickRegister} validationSchema={validationRegister}>
                 <Form className="Form">
@@ -35,7 +37,7 @@ const Cadastro = () => {
                 <ErrorMessage
                     component="span"
                     name="name"
-                    classname="Form-error" />
+                    className="Form-error" />
                 </div>
                     
                 <div className="form-login-group">

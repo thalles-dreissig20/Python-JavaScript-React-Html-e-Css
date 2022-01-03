@@ -9,6 +9,9 @@
     border-radius: 5px;
 }
 h1{
+  position: absolute;
+  top: 16px;
+  left: 38%;
   color: white;
   text-align: center;
 }
@@ -32,4 +35,11 @@ input{
   display: inline-block;
   padding: 5px;
   margin-top: 20px;
+}
+.Form-error{
+  color: red;
+}
+.icon-login{
+  font-size: 80px;
+  margin-left: 10%;
 }
