@@ -18,6 +18,7 @@ const Cadastro = () => {
     };
 
     const validationRegister = yup.object().shape({
+        name: yup.string().required("Esse campo é obrigatorio"),
         email: yup.string().email("Não é um email valido!").required("Este campo é obrigatorio!"),
         password: yup.string().min(8, "A senha deve conter 8 caracteres!").required("Esse campo é obrigatorio!"),
         confirmPassword: yup.string().required("Esse campo é obrigatorio!").oneOf([yup.ref("password"), null], "As senhas não são iguais!"),
@@ -33,7 +34,7 @@ const Cadastro = () => {
                 <Field name="name" className="form-field" placeholder="Nome Completo" />
                 <ErrorMessage
                     component="span"
-                    name="nome"
+                    name="name"
                     classname="Form-error" />
                 </div>
                     
