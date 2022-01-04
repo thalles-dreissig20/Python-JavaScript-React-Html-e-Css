@@ -50,3 +50,17 @@ input{
   padding: 5px;
   margin-top: 20px;
 }
+.footer{
+  display: flex;
+}
+label{
+  position: relative;
+  margin-top: 20%;
+  color: white;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.gif{
+  height: 200px;
+  padding: 20px;
+}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as yup from "yup";
 import Axios from "axios";
 import './login.css';
+import gif from '../gif.gif';
 
 function Login() {
   
@@ -49,6 +50,10 @@ function Login() {
             <button>
                <Link className="Link" to="/Register">Cadastrar</Link>
             </button>
+            <div className="footer">
+              <img className="gif" src={gif} alt="foto"/>
+              <label>Bem vindo ao nosso sistema!</label>
+            </div>
           </Form>
       </Formik>
     </div>
