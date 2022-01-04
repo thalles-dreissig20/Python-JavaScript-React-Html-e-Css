@@ -1,3 +1,4 @@
+import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link } from 'react-router-dom';
 import * as yup from "yup";
@@ -37,7 +38,7 @@ function Login() {
             </div>
 
             <div className="form-login-group">
-                <Field name="password" className="form-field" placeholder="Senha" />
+                <Field name="password" autocomplete="off" className="form-field" placeholder="Senha" />
                 <ErrorMessage 
                 component="span"
                 name="password"
@@ -52,7 +53,7 @@ function Login() {
             </button>
             <div className="footer">
               <img className="gif" src={gif} alt="foto"/>
-              <label>Bem vindo ao nosso sistema!</label>
+              <span name="label">Bem vindo ao nosso sistema!</span>
             </div>
           </Form>
       </Formik>

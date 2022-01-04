@@ -49,7 +49,7 @@ const Cadastro = () => {
                 </div>
 
                 <div className="form-login-group">
-                <Field name="password" className="form-field" placeholder="Senha" />
+                <Field name="password" autocomplete="off" className="form-field" placeholder="Senha" />
                 <ErrorMessage 
                     component="span"
                     name="password"
@@ -57,7 +57,7 @@ const Cadastro = () => {
                 </div>
 
                 <div className="form-login-group">
-                <Field name="confirmPassword" className="form-field" placeholder="Confirme sua senha" />
+                <Field name="confirmPassword" autocomplete="off" className="form-field" placeholder="Confirme sua senha" />
                 <ErrorMessage 
                     component="span"
                     name="confirmPassword"

@@ -19,6 +19,7 @@ app.post("/Register", (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
     const name = req.body.name;
+    
 
     db.query("SELECT * FROM usuarios WHERE email = ?", [email],
     (err, result) =>{
@@ -47,6 +48,7 @@ app.post("/Register", (req, res) => {
 app.post("/Login", (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
+    const span = req.body.span;
 
     db.query("SELECT * FROM usuarios WHERE email = ?",
         [email], (err, result) => {
@@ -56,7 +58,7 @@ app.post("/Login", (req, res) => {
             if(result.length > 0){
                 bcrypt.compare(password, result[0].password, (erro, result) => {
                     if(result) {
-                        res.send("Usúario logado com sucesso!");
+                        res.send(span + " Usúario logado com sucesso!");
                     }else{
                         res.send("Senha incorreta!");
                     }
