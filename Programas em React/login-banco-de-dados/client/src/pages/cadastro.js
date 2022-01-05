@@ -37,7 +37,7 @@ const Cadastro = () => {
                 <ErrorMessage
                     component="span"
                     name="name"
-                    className="Form-error" />
+                    className="Form-error-nome" />
                 </div>
                     
                 <div className="form-login-group">
@@ -45,7 +45,7 @@ const Cadastro = () => {
                 <ErrorMessage 
                     component="span"
                     name="email"
-                    className="Form-error" />
+                    className="Form-error-email-cadastro" />
                 </div>
 
                 <div className="form-login-group">
@@ -53,7 +53,7 @@ const Cadastro = () => {
                 <ErrorMessage 
                     component="span"
                     name="password"
-                    className="Form-error"/>
+                    className="Form-error-senha-cadastro"/>
                 </div>
 
                 <div className="form-login-group">
@@ -61,7 +61,7 @@ const Cadastro = () => {
                 <ErrorMessage 
                     component="span"
                     name="confirmPassword"
-                    className="Form-error"/>
+                    className="Form-error-senha-confirm-cadastro"/>
                 </div>
                 <button className="button" type="submit">Cadastrar</button>
                 

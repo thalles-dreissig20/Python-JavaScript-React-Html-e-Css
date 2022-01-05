@@ -34,7 +34,7 @@ function Login() {
               <ErrorMessage
               component="span"
               name="email"
-              className="Form-error"/>
+              className="Form-error-email"/>
             </div>
 
             <div className="form-login-group">
@@ -42,7 +42,7 @@ function Login() {
                 <ErrorMessage 
                 component="span"
                 name="password"
-                className="Form-error"/>
+                className="Form-error-senha"/>
             </div>
 
             <button className="button" type="submit">Login</button>

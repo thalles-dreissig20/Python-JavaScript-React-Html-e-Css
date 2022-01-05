@@ -64,3 +64,19 @@ span{
   height: 200px;
   padding: 20px;
 }
+.Form-error-senha{
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: 50%;
+  color: red;
+  opacity: 0.8;
+}
+.Form-error-email{
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  color: red;
+  left: 50%;
+  opacity: 0.8;
+}
